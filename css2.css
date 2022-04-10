@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 80vh;
+    background-image: url('https://cdn.discordapp.com/attachments/874349070339153961/962642322368114718/header.png');
+    background-position: center;
+    color: #fff;
+}
+
+header nav{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #bababa;
+}
+
+header nav a:hover {
+    color: #fff;
+    border-bottom: #fff solid 2px;
+}
+
+.premiere{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #18212b;
+    color: #fff;
+    padding: 30px;
+}
+
+.premiere .gauche {
+    margin-right: 400px;
+}
+
+.offre{
+    padding: 30px;
+    background-image: url(https://img.gta5-mods.com/q75/images/2020-bugatti-bolide-addon-sp-fivem/4df6f4-bolidenew.png);
+    background-position: center;
+    color: #fff;
+    font-size: 2em;
+}
+.offre .cards{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.offre .cards .carte{
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.offre .cards .carte img {
+    height: 60px;
+}
+
+.offre h1, .offre p{
+    text-align: center;
+}
+
+footer{
+    background-color: #18212b;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .socialmedia{
+    display: flex;
+}
+
+footer .socialmedia a{
+    color: white;
+    font-size: 25px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+footer .socialmedia a:hover{
+    color: white;
+    font-size: 25px;
+    margin-right: 15px;
+    padding: 5px;
+    border-bottom: #fff solid 2px;
+}
+
+
+@media screen and (max-width: 810px) {
+    .premiere .gauche{
+        width: 100%;
+    }
+    .premiere .droite {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .premiere .gauche {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h1{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  place-items: center;
+  height: 100vh;
+  background-image: url(https://img.gta5-mods.com/q95/images/cnn-weazel-news-building-reworked-hq/a02573-1.jpg);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+  margin-left: 20%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+@media screen and (max-width: 810px) {
+    .container{
+        margin-left: 0;
+    }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
